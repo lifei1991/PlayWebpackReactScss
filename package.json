@@ -1,0 +1,31 @@
+{
+  "name": "Web",
+  "version": "1.0.0",
+  "description": "This is your new Play application =================================",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.10.0",
+    "css-loader": "^0.23.1",
+    "jsx-loader": "^0.13.2",
+    "node-sass": "^3.8.0",
+    "raw-loader": "^0.5.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "redux": "^3.5.2",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0",
+    "webpack-zepto": "0.0.1"
+  }
+}

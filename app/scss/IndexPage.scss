@@ -1,0 +1,81 @@
+$heightOfHome: 640px;
+$heightOfHead: 200px;
+$heightOfuserInfo: 30px;
+$heightOfHeadBread: 40px;
+
+body.indexPage {
+  font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+  font-size: 13px;
+  background-image:url('/public/images/top_bg.png');
+  background-size: 100%;
+  margin: 0px;
+
+  .back {
+    width: 100%;
+    min-height: 700px;
+    min-width: 1300px;
+
+    .userInfo {
+      width: 100%;
+      height: $heightOfuserInfo;
+      position: relative;
+      top: 20px;
+
+      .productLogo {
+        width: 346px;
+        height: $heightOfuserInfo;
+        float: left;
+        margin-left: 30px;
+        background-image:url('/public/images/logo_2.png');
+        background-repeat: no-repeat;
+      }
+
+      .userName {
+        float: right;
+        margin-right: 30px;
+      }
+
+      .userLogo {
+        width: 22px;
+        height: 21px;
+        float: right;
+        background-image:url('/public/images/avatar_default.png');
+        background-color: #26999e;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .body {
+      width: 100%;
+      height: $heightOfHome - $heightOfHead - $heightOfuserInfo;
+      margin-top: $heightOfHead - $heightOfuserInfo;
+
+      .headBread {
+        height: $heightOfHeadBread;
+        margin-left: 90px;
+
+        div {
+          width: 200px;
+          height: $heightOfHeadBread;
+          margin-right: 30px;
+          display: inline-block;
+          //background-color: #7dc2c5;
+          text-align: center;
+          line-height: $heightOfHeadBread;
+          color: #1d7377;
+          font-weight: bold;
+          font-size: 16px;
+          background: linear-gradient(135deg, transparent 0.5em, #7dc2c5 0);
+          cursor: pointer;
+        }
+      }
+
+      #content {
+        width: 100%;
+        height: $heightOfHome - $heightOfHead - $heightOfHeadBread;
+        background-color: #ffffff;
+            background: linear-gradient(135deg, transparent 1.5em, #ffffff 0)
+      }
+    }
+  }
+}

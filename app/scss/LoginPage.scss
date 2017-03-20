@@ -1,0 +1,116 @@
+@mixin inputDiv() {
+  width: 92%;
+  background-color: #a8d6d8;
+  opacity: 0.8;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 8%;
+}
+
+@mixin input() {
+  background-color:transparent;
+  height: 100%;
+  border-radius: 10px;
+  border: 0px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  color: #092628;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #092628;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #092628;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #092628;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #092628;
+}
+
+body.loginPgae {
+  font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+  font-size: 13px;
+  height: auto;
+  background-image:url('/public/images/login_bg.png');
+  background-size: 100%;
+
+  #PageContent {
+    position: absolute;
+    min-height: 640px;
+    min-width: 460px;
+    width: 100%;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+
+    .loginCenterDiv {
+      position: absolute;
+      width: 360px;
+      height: 357px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin:auto;
+      font-size: 16px;
+      color: #092628;
+
+      .topLogo {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        background-image:url('/public/images/logo.png');
+      }
+
+      .inputUserNameDiv {
+        margin-top: 55px;
+        @include inputDiv();
+
+        .inputUserName {
+          @include input();
+        }
+      }
+
+      .inputPasswordDiv {
+        margin-top: 32px;
+        @include inputDiv();
+
+        .inputPassword {
+          @include input();
+        }
+      }
+
+      .loginBtn {
+        width: 200px;
+        background-color: #77b81a;
+        margin-top: 40px;
+        height: 50px;
+        color: #ffffff;
+        font-size: 18px;
+        margin-left: 80px;
+        border: 0px;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+
+    .buttomLogo {
+      width: 454px;
+      height: 25px;
+      margin: auto;
+      background-image:url('/public/images/logo_text.png');
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      right: 0;
+    }
+  }
+}
